@@ -2,6 +2,6 @@
   cron:
     user: ansible
     name: "ansible provision"
-    minute: "*/15"
+    minute: "*/10"
     job: "/usr/bin/ansible-pull --vault-password-file ~/.vault_pass -o -U https://github.com/mnrowe/d12-daily-driver.git > /dev/null"
 
